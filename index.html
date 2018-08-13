@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  
+    <!-- página inicial -->
+    <div id="user_div" class="container-fluid ">
+        <div class="row">
+            <section id="left-sidebar" class="m-3 ml-3 col-md-3 d-sm-none  d-none d-md-block text-center">
+                <div id="sectionA" class="m-1">
+                    <h5 class=" text-uppercase mt-3">Meus amigos</h5>
+                    <div class="d-inline-block">
+                        <!-- Aqui ficaria, no caso, uma lista de amigos -->
+                        <img src="assets/images/friend1.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                    </div>
+                    <hr>
+                    <div id="sectionB">
+                        <h5 class=" text-uppercase m-1 mb-4">Sugestão de amigos</h5>
+                        <div class="">
+                            <h6 class="">Florbela Espanca</h6>
+                            <a><img src="" alt="" class=" d-inline-block littlebook pull-left img-radius"></a> 
+                            <p class=" ml-2 mt-2">Florbela está escrevendo um novo poema, será que o tema não é parecido com o seu?</p>
+                            <button class="btn btn-purpleback mt-4 align-self-center">Adicionar a amigos</button>
+                        </div>
+                        <button class="btn btn-purple mt-2 align-self-center">Conheça mais pessoas</button>
+                    </div>
+                    <hr>
+                </div>
+                <div id="sectionC">
+                    <!-- mais conteudos  -->
+                   
+                </div>
+                <hr>
+                <div id="sectionD">
+               <!-- Mais contéudos -->
+                </div>
+                <hr>
+                <div id="sectionE">
+                    <h5 class=" text-uppercase">Eventos próximos</h5>
+                    <h6 class=" text-uppercase mt-4">Saraus</h6>
+                    <div class=" ">
+                        <h6 class=" font-weight-bold">Novos escritores: poesias de amor</h6>
+                        <img src="" alt="" class=" d-inline-block littlebook pull-left img-radius">
+                        <p class=" ml-2 mt-2">Avenida Arcilio federzoni, Francisco  Morato-SP 18hrs</p>
+                        <button class="btn btn-sm btn-purple">Confirmar<i class="fa fa-check" aria-hidden="true"></i></button>
+                    </div>
+                    <hr class="">
+                    <h6 class=" text-uppercase mt-4">Leituras</h6>
+                    <div class="">
+                        <h6 class=" font-weight-bold">Leitura do novo livro de Danilo</h6>
+                        <img src="" alt="" class=" d-inline-block littlebook pull-left img-radius">
+                        <p class=" ml-2 mt-2">CIC-Francisco Morato 16:00hrs.
+                        </p>
+                        <button class="btn btn-sm ">Confirmar<i class="fa fa-check" aria-hidden="true"></i></button>
+                    </div>                                
+                </div>
+            </section>
+            <div id="" class="col-md-6 col-sm-12">
+                <div class="card mt-2 mb-2 col-sm-12" id="">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs pull-right" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="true">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span class="d-none d-lg-inline-block ">Escrivaninha</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span class="d-none d-lg-inline-block ">Um livro que te inspira </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-1">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="" id="post" role="tabpanel" aria-labelledby="post-tab">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" id="comment" placeholder="Qual a escrita de hoje?"></textarea>
+                                    <button class="btn btn-sm btn-purple mt-3 ml-1" type="button" data-toggle="collapse" data-target="#shareImage" aria-expanded="false"
+                                        aria-controls="shareImage">Colocar uma imagem</button>
+                                    <div class="collapse" id="shareImage">
+                                        <span class="ml-2 ">Coloque a url da imagem aqui</span>
+                                        <input type="file" class="btn-purple" id="files" name="files[]" />
+                                    </div>
+                                </div>
+                                <button class="btn btn-purpleback mt-4 ml-2 mb-1" id="bt-post">Publicar</button>
+                            </div>
+                            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                <span class="ml-4 littlefont">Coloca aquí o ISBN do livro</span>
+                                <input type="text" id="isbn-input" class="purple-input input-group-lg">
+                                <button class="btn btn-sm btn-purple" type="button" data-toggle="collapse" data-target="#bookInfo" aria-expanded="false"
+                                aria-controls="bookInfo" id="search">Buscar</button>
+                                <div class="collapse ml-4 mt-4" id="bookInfo">
+                                    <div class="titles text-center mb-3">
+                                        <div id="title" class=" d-inline-block font-weight-bold">Título</div>
+                                        <div id="author" class=" d-inline-block font-italic littlefont">O autor</div>
+                                    </div>
+                                    <img src="#" id="cover" class="pull-left m-4 mb-1">
+                                    <div id="description" class="mt-4 m-3 littlefont">Descrição</div>
+                                </div>
+                                <div>
+                                    <span class="littlefont font-italic text-center">Quantas estrelas esse livro merece?</span>
+                                    <div class="star-rating mb-1 text-center">
+                                        <span class="fa fa-star-o" data-rating="1"></span>
+                                        <span class="fa fa-star-o" data-rating="2"></span>
+                                        <span class="fa fa-star-o" data-rating="3"></span>
+                                        <span class="fa fa-star-o" data-rating="4"></span>
+                                        <span class="fa fa-star-o" data-rating="5"></span>
+                                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="review-comment"
+                                     placeholder="Comentário sobre o livro"></textarea>
+                                </div>
+                                <button class="btn btn-purpleback mt-2 ml-4 mb-3" id="post-review">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                         
+                <div id="containerpost">
+                    <div class="card border-light  col-sm-12 mb-3 mt-1s" id="readingpost">
+                        <div class="card-body m-1">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold  ml-2 mt-2 mr-2 d-inline">Danilo </h5>leu:
+                                <span class="littlefont pull-right  mr-2 text-muted">Agora</span>
+                            </h6>
+                            <div class="card-text d-flex justify-content-start mt-3">
+                                <div class=" d-inline-block">
+                                   <b>FOTO</b>
+                                </div>
+                                <div class="d-inline-block m-1 ml-4 mr-4">
+                                    <h5 class=" font-weight-bold" id="card-title">Os Miseráveis</h5>
+                                    <h6 class=" font-italic mb-2" id="card-author"> Victor Hugo </h6>
+                                    <button class=" btn btn-purple mb-1 btn-sm">Adicionar a minha lista</button>
+                                    <div class="star-rating mb-1">
+                                        <span class="fa fa-star-o" data-rating="1"></span>
+                                        <span class="fa fa-star-o" data-rating="2"></span>
+                                        <span class="fa fa-star-o" data-rating="3"></span>
+                                        <span class="fa fa-star-o" data-rating="4"></span>
+                                        <span class="fa fa-star-o" data-rating="5"></span>
+                                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                    </div>
+                                    <button class="btn btn-purpleback btn-sm" type="button" data-toggle="collapse" data-target="#card-description" aria-expanded="false"
+                                        aria-controls="card-description">Ver resumo</button>
+                                    <span class="bookresume littlefont collapse" id="card-description">
+                                        Esta obra é considerada a melhor e mais popular criação de Victor Hugo. O impacto causado por sua história envolvente garantiu que ele fosse reconhecido mundialmente. É quase impossível não ter ouvido falar da história de Cossette, Marius, Javer e Jean Valjean.
+                                    </span>
+                                    <div id="card-review" class="comment d-block mt-4">
+                                       Eu amei esse livro!!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                    <button class="btn btn-nobackground like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                                    <button class="btn btn-nobackground love"> <i class="fa fa-gratipay" aria-hidden="true"></i></button>
+                                <div id="comment-section">
+                                    <div id="coment-user" class="comments">
+                                        <span class=" font-weight-bold d-block littlefont">Bia disse:</span>
+                                        <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                        <span id="comment-text">Também gostei muito desse livro, impactante!.</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <label for="comment" class=" mb-3">Adicionar um comentário:</label>
+                                    <textarea class="form-control" rows="1" id="card-comment"></textarea>
+                                    <button class="btn btn-sm btn-purpleback mt-3" id="card-submitcomment">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-light  col-sm-12 mb-3 mt-1s" id="simplepost">
+                        <div class=" m-1">
+                            <h6 class="card-title">
+                            <h5 class=" font-weight-bold  ml-2 mt-2 mr-2 d-inline">Silmara</h5>Postou:
+                            <span class="littlefont pull-right  mr-2 text-muted">agora</span>
+                            </h6>
+                            <div id="post-description" class=" mt-4">
+                             Numa sequência...
+                               Inconsequentemente consciente foi consequente uma consequência. 
+                            </div>
+                            <output id="list" class="d-inline"></output>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button class="btn btn-nobackground like">
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-nobackground love">
+                                <i class="fa fa-gratipay" aria-hidden="true"></i>
+                            </button>
+                            <div id="comment-section-post">
+                                <div id="coment-user-post" class="">
+                                    <span class=" font-weight-bold d-block littlefont">Bia disse:</span>
+                                    <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                    <span id="comment-text-post">Com certeza vai haver uma reação ha uma ação, Sil, fiz 
+                                    um novo poema, da uma lida na minha escrivaninha. Beijos</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class=" mb-3">Adicionar um comentário :</label>
+                                <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                <button class="btn btn-sm btn-purpleback mt-3" id="card-submitcomment-post" onclick="postear()">publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+            <div id="right-sidebar" class="m-3 col-md-2 text-center  d-sm-none  d-none d-md-block">
+                <div id="sectionF" class=" text-center m-2">
+                    <h5 class=" text-uppercase">Recomendações</h5>
+                    <div class="d-inline-block">
+                        <img src="" width="80%">
+                    </div>
+                    <div class="d-inline-block">
+                        <h6 class=" font-weight-bold mt-4">Eu e eu mesma</h6>
+                        <span class="font-italic">por Silmara Cavalcante</span>
+                        <p class=" littlefont mt-4">
+                            A minha verdade absoluta
+                            confessada na ausência,
+                            essa ausência de mim própria, 
+                            essa ausência de luta.
+                            Meu verdadeiro e único pensamento
+                            nessas horas, é o quanto
+                            minha ausência me devora...
+                            sinto falta a todo momento.
+                            Uma saudade sem explicação,
+                            estou só, sem a mim, 
+                            numa completa solidão. 
+                        </p>
+                    </div>
+                </div>
+                <div id="sectionG" class=" mt-4">
+                    teste
+                </div>
+                <hr>
+                <div id="sectionH">
+                    <img src="assets/images/logo.png" width="80%" alt="">
+                    <a href="#" class=" footer-a d-block mt-4">Sobre a Escrivaninha </a>
+                    <a href="#" class=" footer-a d-block mt-1">Autores</a>
+                    <a href="#" class=" footer-a d-block mt-1">Ajuda</a>
+                    <a href="#" class=" footer-a d-block mt-1">Termos</a>
+                    <a href="#" class=" footer-a d-block mt-1">Para escolas</a>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+        //firebase
+    </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="app.js" charset="utf-8"></script>
+    <script src="js/login.js"></script>
+    
+
+</body>
+
+</html>
